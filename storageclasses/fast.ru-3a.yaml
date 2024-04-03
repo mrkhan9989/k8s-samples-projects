@@ -1,0 +1,12 @@
+---
+# fast.ru-3a.yaml
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: fast.ru-3a
+provisioner: cinder.csi.openstack.org
+parameters:
+  type: fast.ru-3a
+  availability: ru-3a
+  fsType: ext4
+allowVolumeExpansion: true
